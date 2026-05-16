@@ -2,6 +2,8 @@
 
 Teddy is a calm, dapper Codex buddy co-designed with OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
 
+![Teddy, your tiny Codex buddy](assets/teddy-social-card.png)
+
 This repo hosts the public landing page and share-safe download package:
 
 - Site: `https://danieloleary.github.io/teddy-v31/`
