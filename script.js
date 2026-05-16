@@ -1,4 +1,4 @@
-const installPrompt = `Please install Teddy V3.1, my tiny Codex buddy, from this ZIP.
+const installPrompt = `Please install Teddy, my tiny Codex buddy, from this ZIP.
 Unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
 then verify the installed spritesheet hash matches the package manifest.`;
 

@@ -1,6 +1,6 @@
-# Teddy V3.1 Codex Pet
+# Teddy Codex Buddy
 
-Teddy V3.1 is a calm, dapper Codex buddy co-designed with OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
+Teddy is a calm, dapper Codex buddy co-designed with OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
 
 This repo hosts the public landing page and share-safe download package:
 
@@ -21,14 +21,14 @@ This repo hosts the public landing page and share-safe download package:
 ```
 
 5. Restart Codex if Teddy does not appear right away.
-6. Select `Teddy V3.1` in Codex pets.
+6. Select `Teddy` in Codex pets.
 
 ## Tell Codex To Install It
 
 Paste this into Codex after downloading the ZIP:
 
 ```text
-Install the Teddy V3.1 Codex pet from this ZIP.
+Install the Teddy Codex pet from this ZIP.
 Unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
 then verify the installed spritesheet hash matches the package manifest.
 ```
