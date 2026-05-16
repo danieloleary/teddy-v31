@@ -1,6 +1,6 @@
-# Teddy Bear Pet for Codex
+# Teddy, a Little Bear Pet for Codex
 
-Meet Teddy, Danno's Chief of Staff, and now Codex Pet. Teddy is a calm, dapper bear buddy built by [Dan O'Leary](https://github.com/danieloleary), co-designed with Teddy and OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
+Meet Teddy, Danno's Chief of Staff turned Codex pet. Teddy is a calm, dapper little bear buddy built by [Dan O'Leary](https://github.com/danieloleary), co-designed with Teddy and OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
 
 [![Teddy waving in front of Codex](assets/teddy-social-card.png)](https://danieloleary.github.io/teddy-v31/)
 
