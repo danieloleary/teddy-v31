@@ -1,9 +1,9 @@
 {
   "id": "teddy",
-  "displayName": "Teddy V3.1",
-  "version": "v3.1-outline-polish",
+  "displayName": "Teddy Codex Buddy",
+  "version": "warm-cream-outline",
   "updated_at": "2026-05-16T09:19:43-07:00",
-  "description": "Teddy V3.1 with the same calm dapper iPad-mini identity and a smoother warm-cream sticker outline instead of the old white/pink halo.",
+  "description": "Teddy Codex Buddy with a calm dapper iPad-mini identity and a smooth warm-cream sticker outline.",
   "install_dir": "~/.codex/pets/teddy",
   "source_run": "private-local-production-run",
   "installed_package": "~/.codex/pets/teddy",
@@ -29,5 +29,5 @@
     "errors": [],
     "warnings": []
   },
-  "qa_note": "Outline treatment only: exterior white/pink halo pixels recolored to warm cream #F2E6CB while preserving V3.1 identity, proportions, outfit, glasses, iPad mini, animation states, and calm vibe."
+  "qa_note": "Outline treatment only: exterior white/pink halo pixels recolored to warm cream #F2E6CB while preserving Teddy's identity, proportions, outfit, glasses, iPad mini, animation states, and calm vibe."
 }

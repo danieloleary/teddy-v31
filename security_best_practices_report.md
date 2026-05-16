@@ -1,10 +1,10 @@
-# Teddy V3.1 Landing Page Security Review
+# Teddy Codex Buddy Landing Page Security Review
 
 ## Executive Summary
 
 Status: passed after fixes.
 
-The Teddy V3.1 public landing page is a static GitHub Pages site with no backend, auth, forms, analytics, third-party scripts, or network calls. The active review found no committed secrets and no DOM XSS sinks. Two public-sharing issues were fixed before release hardening was considered complete: local absolute paths were removed from public metadata and a restrictive static-page CSP/referrer baseline was added.
+The Teddy Codex Buddy public landing page is a static GitHub Pages site with no backend, auth, forms, analytics, third-party scripts, or network calls. The active review found no committed secrets and no DOM XSS sinks. Two public-sharing issues were fixed before release hardening was considered complete: local absolute paths were removed from public metadata and a restrictive static-page CSP/referrer baseline was added.
 
 ## Findings Fixed
 
@@ -36,7 +36,7 @@ The Teddy V3.1 public landing page is a static GitHub Pages site with no backend
 - ZIP metadata scan: no absolute local home path or local username string remains inside `teddy/manifest.json` or `teddy/installed-validation.json`.
 - DOM sink scan: no common HTML-injection, code-execution, event-handler, cross-window, browser-storage, or dynamic-navigation sink pattern was found in app code.
 - Third-party surface: no external scripts, styles, iframes, fonts, or CDN assets.
-- Package integrity: ZIP test passed; updated package SHA-256 is `c13cf4b0a2900b00b8f42b2e3587b0631630678cebdf51476e61973cdcbda599`.
+- Package integrity: ZIP test passed; current friend-ready ZIP is `downloads/teddy-codex-buddy.zip`, and package SHA-256 is `6b7a8848a2842548ff4365ef011a3b355f4be9b14740f89e4ad49b54c7594f1f`.
 
 ## Residual Risk
 

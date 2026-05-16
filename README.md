@@ -2,38 +2,47 @@
 
 Teddy is a calm, dapper Codex buddy co-designed with OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
 
-![Teddy, your tiny Codex buddy](assets/teddy-social-card.png)
+[![Teddy, your tiny Codex buddy](assets/teddy-social-card.png)](https://danieloleary.github.io/teddy-v31/)
 
-This repo hosts the public landing page and share-safe download package:
+## Download
 
-- Site: `https://danieloleary.github.io/teddy-v31/`
-- Download: `downloads/teddy-v3-1-outline-polish-codex-pet.zip`
-- Package hash: `c13cf4b0a2900b00b8f42b2e3587b0631630678cebdf51476e61973cdcbda599`
-- Spritesheet hash: `320be4f11d6ce14288e2756f972f2909231032259f5c297fd35271923efc8e64`
+- Landing page: [danieloleary.github.io/teddy-v31](https://danieloleary.github.io/teddy-v31/)
+- Friend-ready ZIP: [downloads/teddy-codex-buddy.zip](downloads/teddy-codex-buddy.zip)
+- Package SHA-256: `6b7a8848a2842548ff4365ef011a3b355f4be9b14740f89e4ad49b54c7594f1f`
+- Spritesheet SHA-256: `320be4f11d6ce14288e2756f972f2909231032259f5c297fd35271923efc8e64`
 
 ## Install Teddy
 
-1. Download `teddy-v3-1-outline-polish-codex-pet.zip`.
+1. Download `teddy-codex-buddy.zip`.
 2. Unzip it.
 3. Open the unzipped `teddy` folder.
-4. Copy `pet.json` and `spritesheet.webp` into:
-
-```text
-~/.codex/pets/teddy/
-```
-
+4. Copy `pet.json` and `spritesheet.webp` into `~/.codex/pets/teddy/`.
 5. Restart Codex if Teddy does not appear right away.
 6. Select `Teddy` in Codex pets.
 
 ## Tell Codex To Install It
 
-Paste this into Codex after downloading the ZIP:
+Paste this into Codex:
 
 ```text
-Install the Teddy Codex pet from this ZIP.
-Unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
+Please install Teddy, my tiny Codex buddy, from:
+https://danieloleary.github.io/teddy-v31/downloads/teddy-codex-buddy.zip
+
+Download and unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
 then verify the installed spritesheet hash matches the package manifest.
 ```
+
+## Teddy Moves
+
+![Teddy mood board showing nine cozy animation moods](assets/site/motion-wardrobe.png)
+
+## Repo Map
+
+- `index.html`, `styles.css`, `script.js`: the public landing page.
+- `downloads/teddy-codex-buddy.zip`: the share-safe install package.
+- `assets/pet.json` and `assets/spritesheet.webp`: the two files Codex needs.
+- `assets/site/`: landing-page images and README visuals.
+- `assets/manifest.json` and `assets/installed-validation.json`: proof files for the curious.
 
 ## Package Contents
 
@@ -47,7 +56,7 @@ The ZIP includes:
 - `installed-validation.json`
 - `manifest.json`
 
-Only `pet.json` and `spritesheet.webp` are needed for installation. The rest are preview and proof files.
+Only `pet.json` and `spritesheet.webp` are needed for installation. The rest are previews, validation proof, and hashes.
 
 ## Validation
 
@@ -59,6 +68,13 @@ Only `pet.json` and `spritesheet.webp` are needed for installation. The rest are
 - Transparent RGB residue: `0`
 - Errors: `[]`
 - Warnings: `[]`
+
+<details>
+<summary>Build story visual</summary>
+
+![Teddy build architecture and stats](assets/site/teddy-build-story-card.png)
+
+</details>
 
 ## Source
 

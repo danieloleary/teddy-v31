@@ -331,6 +331,7 @@ p {
 .download-band,
 .install,
 .preview,
+.share-band,
 .proof {
   padding: clamp(72px, 10vw, 116px) 0;
 }
@@ -389,6 +390,7 @@ p {
 }
 
 .download-grid,
+.share-grid,
 .proof-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
@@ -422,6 +424,33 @@ p {
   color: rgba(255, 250, 242, 0.66);
   font-size: 13px;
   font-weight: 700;
+}
+
+.share-band {
+  background:
+    radial-gradient(circle at 86% 14%, rgba(127, 181, 214, 0.18), transparent 34%),
+    linear-gradient(180deg, #fffaf2 0%, #f8f0df 100%);
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.share-card-frame {
+  margin: 0;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.share-card-frame img {
+  width: 100%;
+  border-radius: 4px;
 }
 
 .file-icon {
@@ -676,6 +705,7 @@ figcaption {
   .download-grid,
   .buddy-grid,
   .proof-grid,
+  .share-grid,
   .install-grid,
   .motion-strip {
     grid-template-columns: 1fr;
@@ -710,6 +740,7 @@ figcaption {
   }
 
   .hero-actions,
+  .share-actions,
   .button {
     width: 100%;
   }

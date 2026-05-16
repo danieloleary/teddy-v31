@@ -1,5 +1,7 @@
-const installPrompt = `Please install Teddy, my tiny Codex buddy, from this ZIP.
-Unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
+const installPrompt = `Please install Teddy, my tiny Codex buddy, from:
+https://danieloleary.github.io/teddy-v31/downloads/teddy-codex-buddy.zip
+
+Download and unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
 then verify the installed spritesheet hash matches the package manifest.`;
 
 const toast = document.querySelector("[data-toast]");
