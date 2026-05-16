@@ -1,8 +1,8 @@
 # Teddy V3.1 Codex Pet
 
-Teddy V3.1 is a calm, dapper Codex pet with round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
+Teddy V3.1 is a calm, dapper Codex buddy co-designed with OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
 
-This repo hosts the public landing page and download package:
+This repo hosts the public landing page and share-safe download package:
 
 - Site: `https://danieloleary.github.io/teddy-v31/`
 - Download: `downloads/teddy-v3-1-outline-polish-codex-pet.zip`

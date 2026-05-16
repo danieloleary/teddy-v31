@@ -6,6 +6,7 @@
   --cream: #f6eddd;
   --cream-deep: #ead9bd;
   --paper: #fffaf2;
+  --paper-warm: #fff4df;
   --honey: #cf8b41;
   --blue: #7fb5d6;
   --sage: #8fab8d;
@@ -104,14 +105,23 @@ pre {
 
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 94vh;
   overflow: hidden;
   display: grid;
   align-items: center;
-  padding: 116px clamp(22px, 5vw, 68px) 80px;
+  padding: 118px clamp(22px, 5vw, 68px) 92px;
   background:
-    radial-gradient(circle at 82% 30%, rgba(127, 181, 214, 0.35), transparent 28%),
-    linear-gradient(135deg, #fffaf2 0%, #f3e5cf 56%, #d8e8ec 100%);
+    linear-gradient(145deg, #fffaf2 0%, #f8ead2 54%, #d9ece8 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: auto -12vw -34vh 32vw;
+  height: 58vh;
+  background: rgba(31, 53, 87, 0.08);
+  border-radius: 56% 44% 0 0;
+  transform: rotate(-4deg);
 }
 
 .hero::after {
@@ -150,10 +160,10 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 820px;
   margin-bottom: 20px;
-  font-size: clamp(48px, 8vw, 104px);
-  line-height: 0.92;
+  font-size: clamp(48px, 7.2vw, 92px);
+  line-height: 0.96;
   letter-spacing: 0;
 }
 
@@ -177,9 +187,9 @@ p {
 }
 
 .hero-lede {
-  max-width: 620px;
-  font-size: clamp(19px, 2.3vw, 25px);
-  line-height: 1.45;
+  max-width: 660px;
+  font-size: clamp(19px, 2.1vw, 24px);
+  line-height: 1.5;
 }
 
 .hero-actions {
@@ -247,7 +257,7 @@ p {
   position: absolute;
   z-index: 1;
   right: clamp(8px, 8vw, 120px);
-  bottom: 12vh;
+  bottom: 10vh;
   width: min(36vw, 420px);
   min-width: 260px;
   aspect-ratio: 1;
@@ -255,9 +265,9 @@ p {
 
 .hero-teddy {
   position: absolute;
-  right: 16%;
-  bottom: 10%;
-  width: 58%;
+  right: 13%;
+  bottom: 9%;
+  width: 64%;
   min-width: 190px;
   filter: drop-shadow(0 28px 32px rgba(23, 32, 51, 0.22));
 }
@@ -312,11 +322,55 @@ p {
   margin: 0 auto;
 }
 
+.buddy-band,
 .download-band,
 .install,
 .preview,
 .proof {
   padding: clamp(72px, 10vw, 116px) 0;
+}
+
+.buddy-band {
+  background:
+    linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+}
+
+.buddy-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+}
+
+.buddy-notes {
+  display: grid;
+  gap: 12px;
+}
+
+.buddy-notes div {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(23, 32, 51, 0.11);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 26px rgba(31, 53, 87, 0.07);
+}
+
+.buddy-notes strong,
+.buddy-notes span {
+  display: block;
+}
+
+.buddy-notes strong {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.buddy-notes span {
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.45;
 }
 
 .download-band {
@@ -445,7 +499,8 @@ pre {
 }
 
 .preview {
-  background: #edf5f3;
+  background:
+    linear-gradient(180deg, #eaf5f0 0%, #f8f0df 100%);
 }
 
 .motion-strip {
@@ -484,7 +539,7 @@ figcaption {
 }
 
 .proof {
-  background: var(--paper);
+  background: #fffdf7;
 }
 
 .stats {
@@ -608,12 +663,13 @@ figcaption {
   .hero-teddy {
     right: auto;
     left: 50%;
-    width: 58%;
+    width: 64%;
     min-width: 170px;
     transform: translateX(-50%);
   }
 
   .download-grid,
+  .buddy-grid,
   .proof-grid,
   .install-grid,
   .motion-strip {
