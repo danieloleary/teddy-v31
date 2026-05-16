@@ -1,0 +1,33 @@
+{
+  "id": "teddy",
+  "displayName": "Teddy V3.1",
+  "version": "v3.1-outline-polish",
+  "updated_at": "2026-05-16T09:19:43-07:00",
+  "description": "Teddy V3.1 with the same calm dapper iPad-mini identity and a smoother warm-cream sticker outline instead of the old white/pink halo.",
+  "install_dir": "~/.codex/pets/teddy",
+  "source_run": "private-local-production-run",
+  "installed_package": "~/.codex/pets/teddy",
+  "files": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp",
+    "contact_sheet": "contact-sheet.png",
+    "dark_before_after": "dark-before-after-spotcheck.png",
+    "installed_validation": "installed-validation.json"
+  },
+  "hashes": {
+    "pet_json_sha256": "06a37c75bed45159b668914876f44117c4dbf39610dde79be664a875ff1604f9",
+    "spritesheet_sha256": "320be4f11d6ce14288e2756f972f2909231032259f5c297fd35271923efc8e64",
+    "contact_sheet_sha256": "839c4ca9184206b3e6025aa34a0cfa6b8b0dd9846c13bc53d30d9fd9a526ddc7",
+    "dark_before_after_sha256": "0f50f9c9f6123e0023292138c86f371821d9b8a564d14008a5e236f245f96ba8",
+    "installed_validation_sha256": "99d357e5d0a2ca68cb6dba2b09825a3c919e61dbcfc2c1ba6b23a9ba186da66a"
+  },
+  "validation": {
+    "atlas": "1536x1872 WEBP RGBA",
+    "grid": "8x9",
+    "cell": "192x208",
+    "transparent_rgb_residue_pixels": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "qa_note": "Outline treatment only: exterior white/pink halo pixels recolored to warm cream #F2E6CB while preserving V3.1 identity, proportions, outfit, glasses, iPad mini, animation states, and calm vibe."
+}

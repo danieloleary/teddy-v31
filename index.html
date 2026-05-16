@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; media-src 'none'; worker-src 'none'; frame-src 'none'; form-action 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download Teddy V3.1, a dapper animated Codex pet with glasses, a cardigan, an iPad mini, and a warm cream sticker outline."
+    />
+    <meta property="og:title" content="Teddy V3.1 Codex Pet" />
+    <meta
+      property="og:description"
+      content="A tiny dapper Codex companion. Download the pet ZIP, install it in Codex, and let Teddy keep you company while you build."
+    />
+    <meta property="og:image" content="assets/contact-sheet.png" />
+    <meta name="theme-color" content="#172033" />
+    <title>Teddy V3.1 Codex Pet</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="Teddy V3.1 home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span>Teddy V3.1</span>
+      </a>
+      <nav class="nav" aria-label="Page navigation">
+        <a href="#download">Download</a>
+        <a href="#install">Install</a>
+        <a href="#preview">Preview</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <span class="desk-line line-one"></span>
+          <span class="desk-line line-two"></span>
+          <img src="assets/previews/idle.gif" alt="" class="hero-teddy" />
+        </div>
+        <div class="hero-copy">
+          <p class="microcopy">A tiny dapper build buddy for Codex.</p>
+          <h1 id="hero-title">Teddy V3.1 Codex Pet</h1>
+          <p class="hero-lede">
+            Round glasses. Navy cardigan. Quiet iPad mini. Warm cream sticker outline.
+            Teddy is ready to sit on your desktop and make the work feel a little more cared for.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="downloads/teddy-v3-1-outline-polish-codex-pet.zip" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" />
+              </svg>
+              Download Teddy
+            </a>
+            <button class="button secondary" type="button" data-copy-install>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 8h10v13H8zM6 16H4V3h10v2" />
+              </svg>
+              Copy Codex Prompt
+            </button>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#download" aria-label="Skip to download details">
+          <span>Download pack</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </a>
+      </section>
+
+      <section class="download-band" id="download" aria-labelledby="download-title">
+        <div class="section-shell download-grid">
+          <div>
+            <p class="section-label">Ready to share</p>
+            <h2 id="download-title">One ZIP. Two install files. Zero fuss.</h2>
+            <p>
+              The public download contains Teddy's Codex pet package plus preview and validation files.
+              To install, only `pet.json` and `spritesheet.webp` need to move into Codex.
+            </p>
+          </div>
+          <div class="download-panel">
+            <span class="file-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 3h7l5 5v13H7z" />
+                <path d="M14 3v6h5" />
+                <path d="M10 14h4m-4 4h7" />
+              </svg>
+            </span>
+            <div>
+              <strong>teddy-v3-1-outline-polish-codex-pet.zip</strong>
+              <span>2.3 MB pet package</span>
+            </div>
+            <a class="button primary compact" href="downloads/teddy-v3-1-outline-polish-codex-pet.zip" download>
+              Download
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="install" id="install" aria-labelledby="install-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-label">Install paths</p>
+            <h2 id="install-title">Pick the install style that fits.</h2>
+          </div>
+
+          <div class="install-grid">
+            <article class="install-card">
+              <h3>Do it yourself</h3>
+              <ol>
+                <li>Download and unzip the Teddy ZIP.</li>
+                <li>Open the unzipped `teddy` folder.</li>
+                <li>Copy `pet.json` and `spritesheet.webp` into `~/.codex/pets/teddy/`.</li>
+                <li>Restart Codex if Teddy does not appear.</li>
+                <li>Select `Teddy V3.1` in Codex pets.</li>
+              </ol>
+            </article>
+
+            <article class="install-card dark">
+              <h3>Tell Codex</h3>
+              <p>
+                Paste this into Codex after downloading the ZIP:
+              </p>
+              <pre><code>Install the Teddy V3.1 Codex pet from this ZIP.
+Unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
+then verify the installed spritesheet hash matches the package manifest.</code></pre>
+              <button class="button light" type="button" data-copy-install>
+                Copy install prompt
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview" id="preview" aria-labelledby="preview-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-label">Little motion set</p>
+            <h2 id="preview-title">Calm, useful, very Teddy.</h2>
+          </div>
+          <div class="motion-strip" aria-label="Teddy animation previews">
+            <figure>
+              <img src="assets/previews/idle.gif" alt="Teddy idle animation preview" />
+              <figcaption>Idle</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/previews/waving.gif" alt="Teddy waving animation preview" />
+              <figcaption>Wave</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/previews/review.gif" alt="Teddy review animation preview" />
+              <figcaption>Review</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/previews/focus.gif" alt="Teddy iPad work animation preview" />
+              <figcaption>Focus</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof" aria-labelledby="proof-title">
+        <div class="section-shell proof-grid">
+          <div>
+            <p class="section-label">Package proof</p>
+            <h2 id="proof-title">Validated before sharing.</h2>
+            <p>
+              Teddy's final atlas is a transparent WebP spritesheet with 57 used frames,
+              15 transparent empty cells, and no transparent RGB residue.
+            </p>
+            <dl class="stats">
+              <div><dt>Atlas</dt><dd>1536 x 1872</dd></div>
+              <div><dt>Cell</dt><dd>192 x 208</dd></div>
+              <div><dt>States</dt><dd>9</dd></div>
+              <div><dt>Residue</dt><dd>0</dd></div>
+            </dl>
+          </div>
+          <figure class="sheet-frame">
+            <img src="assets/contact-sheet.png" alt="Teddy V3.1 contact sheet showing all animation rows" />
+            <figcaption>All animation states in the shipped spritesheet.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Teddy V3.1 Codex Pet</span>
+      <a href="assets/manifest.json">Manifest</a>
+      <a href="assets/installed-validation.json">Validation</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>Copied.</div>
+    <script src="script.js"></script>
+  </body>
+</html>
