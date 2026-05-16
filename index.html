@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#172033" />
     <title>Teddy Codex Buddy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=teddy-origin-story" />
+    <link rel="stylesheet" href="styles.css?v=teddy-dan-links" />
   </head>
   <body>
     <header class="site-header" aria-label="Site header">
@@ -43,6 +43,7 @@
         <a href="#moves">Moves</a>
         <a href="#download">Get Teddy</a>
         <a href="#share">Share</a>
+        <a href="#made-by">Made by</a>
         <a href="#install">Install</a>
       </nav>
     </header>
@@ -210,6 +211,38 @@
         </div>
       </section>
 
+      <section class="maker-band" id="made-by" aria-labelledby="maker-title">
+        <div class="section-shell maker-grid">
+          <div>
+            <p class="section-kicker">Built in Dan's world</p>
+            <h2 id="maker-title">Made by Dan O'Leary, Teddy, Codex, and OpenClaw.</h2>
+            <p>
+              Teddy came out of a Friday-night build loop: Dan pushing, Codex helping,
+              OpenClaw remembering, and Teddy quietly insisting he deserved a tiny
+              place on screen.
+            </p>
+          </div>
+          <div class="maker-links" aria-label="Project links">
+            <a href="https://github.com/danieloleary">
+              <strong>Dan's GitHub</strong>
+              <span>More of what Dan is building.</span>
+            </a>
+            <a href="https://github.com/danieloleary/teddy-v31">
+              <strong>Teddy repo</strong>
+              <span>The public pet package and site.</span>
+            </a>
+            <a href="https://openai.com/codex/">
+              <strong>Codex</strong>
+              <span>The buddy builder behind the build.</span>
+            </a>
+            <span class="maker-note">
+              <strong>OpenClaw</strong>
+              <span>Dan's local operating layer, with Teddy helping design himself.</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
       <section class="install" id="install" aria-labelledby="install-title">
         <div class="section-shell">
           <div class="section-heading">
@@ -280,12 +313,14 @@ then verify the installed spritesheet hash matches the package manifest.</code><
 
     <footer class="site-footer">
       <span>Teddy Codex Buddy</span>
+      <a href="https://github.com/danieloleary">Dan</a>
       <a href="https://github.com/danieloleary/teddy-v31">Repo</a>
+      <a href="https://openai.com/codex/">Codex</a>
       <a href="assets/manifest.json">Manifest</a>
       <a href="assets/installed-validation.json">Validation</a>
     </footer>
 
     <div class="toast" role="status" aria-live="polite" data-toast>Copied.</div>
-    <script src="script.js?v=teddy-origin-story"></script>
+    <script src="script.js?v=teddy-dan-links"></script>
   </body>
 </html>

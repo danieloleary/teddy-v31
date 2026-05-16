@@ -456,6 +456,7 @@ p {
 .buddy-band,
 .download-band,
 .install,
+.maker-band,
 .preview,
 .share-band,
 .proof {
@@ -502,6 +503,69 @@ p {
   margin-top: 6px;
   color: var(--ink-soft);
   font-size: 15px;
+  line-height: 1.45;
+}
+
+.maker-band {
+  background: #fff8ea;
+}
+
+.section-kicker {
+  margin: 0 0 10px;
+  color: var(--heart);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.maker-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: start;
+}
+
+.maker-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.maker-links a,
+.maker-note {
+  min-height: 108px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(143, 104, 67, 0.22);
+  border-radius: var(--radius);
+  box-shadow: 0 16px 30px rgba(31, 53, 87, 0.08);
+}
+
+.maker-links a {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.maker-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 34px rgba(31, 53, 87, 0.12);
+}
+
+.maker-links strong,
+.maker-note strong {
+  display: block;
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.maker-links span,
+.maker-note span {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -845,6 +909,7 @@ figcaption {
 
   .download-grid,
   .buddy-grid,
+  .maker-grid,
   .proof-grid,
   .share-grid,
   .install-grid,
@@ -858,6 +923,10 @@ figcaption {
 
   .download-panel .button {
     grid-column: 1 / -1;
+  }
+
+  .maker-links {
+    grid-template-columns: 1fr;
   }
 
   .motion-strip figure {
