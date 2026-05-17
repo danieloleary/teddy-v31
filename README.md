@@ -46,6 +46,16 @@ then verify the installed spritesheet hash matches the package manifest.
 - `assets/site/`: landing-page images and README visuals.
 - `assets/manifest.json` and `assets/installed-validation.json`: proof files for the curious.
 
+## Codex Check
+
+Before shipping a change, Codex can run one small project check:
+
+```bash
+npm run codex:check
+```
+
+It verifies required files, local page references, package hashes, `pet.json`, and basic static-page safety.
+
 ## Package Contents
 
 The ZIP includes:

@@ -1,0 +1,8 @@
+{
+  "name": "teddy-codex-pet",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "codex:check": "node scripts/codex-check.mjs"
+  }
+}
