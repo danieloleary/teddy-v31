@@ -8,6 +8,8 @@ Meet Teddy, a tiny animated bear buddy for your Codex screen. Teddy is calm, dap
 
 - Landing page: [danieloleary.github.io/teddy-v31](https://danieloleary.github.io/teddy-v31/)
 - Friend-ready ZIP: [downloads/teddy-codex-buddy.zip](downloads/teddy-codex-buddy.zip)
+- Teddy repo: [github.com/danieloleary/teddy-v31](https://github.com/danieloleary/teddy-v31)
+- Dan on X: [@Danno2333](https://x.com/Danno2333)
 - Dan's GitHub: [github.com/danieloleary](https://github.com/danieloleary)
 - Built with Codex: [openai.com/codex](https://openai.com/codex/)
 - Package SHA-256: `6b7a8848a2842548ff4365ef011a3b355f4be9b14740f89e4ad49b54c7594f1f`
