@@ -975,6 +975,58 @@ figcaption {
   opacity: 1;
 }
 
+.copy-panel[hidden] {
+  display: none;
+}
+
+.copy-panel {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(23, 32, 51, 0.52);
+}
+
+.copy-panel-card {
+  width: min(640px, 100%);
+  padding: 24px;
+  background: #fffaf2;
+  border: 1px solid rgba(31, 53, 87, 0.16);
+  border-radius: var(--radius);
+  box-shadow: 0 28px 72px rgba(23, 32, 51, 0.28);
+}
+
+.copy-panel-card h2 {
+  margin: 4px 0 8px;
+  font-size: 26px;
+}
+
+.copy-panel-card p {
+  margin: 0;
+}
+
+.copy-panel-card textarea {
+  width: 100%;
+  min-height: 190px;
+  margin: 18px 0;
+  padding: 14px;
+  resize: vertical;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.copy-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
 @media (max-width: 860px) {
   .site-header {
     position: absolute;
@@ -1047,6 +1099,14 @@ figcaption {
 
   .toast.show {
     transform: translate(50%, 0);
+  }
+
+  .copy-panel {
+    align-items: end;
+  }
+
+  .copy-panel-card {
+    padding: 20px;
   }
 }
 

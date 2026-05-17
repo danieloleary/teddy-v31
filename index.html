@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#172033" />
     <title>Teddy Codex Buddy</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=teddy-reader-first" />
+    <link rel="stylesheet" href="styles.css?v=teddy-copy-fallback" />
   </head>
   <body>
     <header class="site-header" aria-label="Site header">
@@ -322,7 +322,24 @@ then verify the installed spritesheet hash matches the package manifest.</code><
       <a href="assets/installed-validation.json">Validation</a>
     </footer>
 
+    <div class="copy-panel" data-copy-panel hidden>
+      <div class="copy-panel-card" role="dialog" aria-modal="true" aria-labelledby="copy-panel-title">
+        <div>
+          <p class="section-kicker">Add to Codex</p>
+          <h2 id="copy-panel-title">Copy Teddy's install prompt.</h2>
+          <p>
+            Your browser blocked one-click copy. Select this prompt and paste it into Codex.
+          </p>
+        </div>
+        <textarea data-copy-fallback readonly rows="7" aria-label="Teddy install prompt"></textarea>
+        <div class="copy-panel-actions">
+          <button class="button primary" type="button" data-copy-select>Select prompt</button>
+          <button class="button secondary" type="button" data-copy-close>Close</button>
+        </div>
+      </div>
+    </div>
+
     <div class="toast" role="status" aria-live="polite" data-toast>Copied.</div>
-    <script src="script.js?v=teddy-reader-first"></script>
+    <script src="script.js?v=teddy-copy-fallback"></script>
   </body>
 </html>
