@@ -576,6 +576,7 @@ p {
 .buddy-band,
 .download-band,
 .install,
+.around-band,
 .maker-band,
 .mood-band,
 .preview,
@@ -769,6 +770,63 @@ p {
   background:
     radial-gradient(circle at 86% 14%, rgba(127, 181, 214, 0.18), transparent 34%),
     linear-gradient(180deg, #fffaf2 0%, #f8f0df 100%);
+}
+
+.around-band {
+  background:
+    radial-gradient(circle at 14% 20%, rgba(207, 139, 65, 0.16), transparent 32%),
+    linear-gradient(180deg, #fffdf7 0%, #eef6f2 100%);
+}
+
+.around-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(340px, 1fr);
+  gap: clamp(28px, 6vw, 64px);
+  align-items: start;
+}
+
+.around-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.around-links a,
+.around-note {
+  min-height: 112px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 53, 87, 0.13);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 30px rgba(31, 53, 87, 0.08);
+}
+
+.around-links a {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.around-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 36px rgba(31, 53, 87, 0.12);
+}
+
+.around-links strong,
+.around-note strong {
+  display: block;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.around-links span,
+.around-note span {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .share-actions {
@@ -1065,6 +1123,7 @@ figcaption {
 
   .download-grid,
   .buddy-grid,
+  .around-grid,
   .maker-grid,
   .mood-grid,
   .share-grid,
@@ -1082,6 +1141,10 @@ figcaption {
   }
 
   .maker-links {
+    grid-template-columns: 1fr;
+  }
+
+  .around-links {
     grid-template-columns: 1fr;
   }
 

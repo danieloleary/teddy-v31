@@ -15,6 +15,15 @@ Meet Teddy, a tiny animated bear buddy for your Codex screen. Teddy is calm, dap
 - Package SHA-256: `6b7a8848a2842548ff4365ef011a3b355f4be9b14740f89e4ad49b54c7594f1f`
 - Spritesheet SHA-256: `320be4f11d6ce14288e2756f972f2909231032259f5c297fd35271923efc8e64`
 
+## Teddy Around The Web
+
+- Live on Codex Pet Gallery: [codex-pet.org/pets/teddy](https://codex-pet.org/pets/teddy)
+- Live on Codex Pets: [codex-pets.net/#/pets/teddy](https://codex-pets.net/#/pets/teddy)
+- Pending on codex-pet.com as `teddy`
+- Submitted to OpenPets: [alvinunreal/openpets#24](https://github.com/alvinunreal/openpets/issues/24)
+- Submitted to Pumpex Pets for approval
+- PR open for Awesome Codex Pet: [legeling/awesome-codex-pet#5](https://github.com/legeling/awesome-codex-pet/pull/5)
+
 ## Install Teddy
 
 1. Download `teddy-codex-buddy.zip`.
