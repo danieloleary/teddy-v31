@@ -1,6 +1,6 @@
 # Teddy, a Little Bear Pet for Codex
 
-Meet Teddy, a tiny animated bear buddy for your Codex screen. Teddy is calm, dapper, and built by [Dan O'Leary](https://github.com/danieloleary), co-designed with Teddy and OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and a warm cream sticker outline.
+Meet Teddy, a tiny animated bear buddy for your Codex screen. Teddy is calm, dapper, and built by [Dan O'Leary](https://github.com/danieloleary), co-designed with Teddy and OpenClaw: round glasses, a navy cardigan, a tiny iPad mini, and softer little work moods.
 
 [![Teddy waving in front of Codex](assets/teddy-social-card.png)](https://danieloleary.github.io/teddy-v31/)
 
@@ -12,8 +12,12 @@ Meet Teddy, a tiny animated bear buddy for your Codex screen. Teddy is calm, dap
 - Dan on X: [@danieloleary](https://x.com/danieloleary)
 - Dan's GitHub: [github.com/danieloleary](https://github.com/danieloleary)
 - Built with Codex: [openai.com/codex](https://openai.com/codex/)
-- Package SHA-256: `6b7a8848a2842548ff4365ef011a3b355f4be9b14740f89e4ad49b54c7594f1f`
-- Spritesheet SHA-256: `320be4f11d6ce14288e2756f972f2909231032259f5c297fd35271923efc8e64`
+- Package SHA-256: `89b41988144d5a334dcce667556e8d8f16fd2932c42bfdd40d114eca7e063023`
+- Spritesheet SHA-256: `c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a`
+
+## What's New
+
+Teddy now has calmer timing and softer little work moods while keeping the same dapper bear identity.
 
 ## Teddy Around The Web
 
@@ -76,9 +80,9 @@ The ZIP includes:
 - `spritesheet.webp`
 - `README.md`
 - `contact-sheet.png`
-- `dark-before-after-spotcheck.png`
 - `installed-validation.json`
 - `manifest.json`
+- `previews/`
 
 Only `pet.json` and `spritesheet.webp` are needed for installation. The rest are previews, validation proof, and hashes.
 

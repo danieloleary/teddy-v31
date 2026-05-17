@@ -1,25 +1,36 @@
 {
   "id": "teddy",
   "displayName": "Teddy Codex Buddy",
-  "version": "warm-cream-outline",
-  "updated_at": "2026-05-16T09:19:43-07:00",
-  "description": "Teddy Codex Buddy with a calm dapper iPad-mini identity and a smooth warm-cream sticker outline.",
+  "version": "calmer-timing",
+  "updated_at": "2026-05-17T18:03:58.588Z",
+  "description": "Teddy Codex Buddy with calmer timing, softer little work moods, round glasses, a navy cardigan, and a tiny iPad mini.",
   "install_dir": "~/.codex/pets/teddy",
   "source_run": "private-local-production-run",
-  "installed_package": "~/.codex/pets/teddy",
   "files": {
     "pet_json": "pet.json",
     "spritesheet": "spritesheet.webp",
     "contact_sheet": "contact-sheet.png",
-    "dark_before_after": "dark-before-after-spotcheck.png",
-    "installed_validation": "installed-validation.json"
+    "installed_validation": "installed-validation.json",
+    "previews": {
+      "idle": "previews/idle.gif",
+      "waving": "previews/waving.gif",
+      "review": "previews/review.gif",
+      "focus": "previews/focus.gif",
+      "waiting": "previews/waiting.gif"
+    }
   },
   "hashes": {
-    "pet_json_sha256": "06a37c75bed45159b668914876f44117c4dbf39610dde79be664a875ff1604f9",
-    "spritesheet_sha256": "320be4f11d6ce14288e2756f972f2909231032259f5c297fd35271923efc8e64",
-    "contact_sheet_sha256": "839c4ca9184206b3e6025aa34a0cfa6b8b0dd9846c13bc53d30d9fd9a526ddc7",
-    "dark_before_after_sha256": "0f50f9c9f6123e0023292138c86f371821d9b8a564d14008a5e236f245f96ba8",
-    "installed_validation_sha256": "99d357e5d0a2ca68cb6dba2b09825a3c919e61dbcfc2c1ba6b23a9ba186da66a"
+    "pet_json_sha256": "a2a2e69f47da98babcee011cbad7a78e7b663e61ff39a6ec5f4c05e860823218",
+    "spritesheet_sha256": "c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a",
+    "contact_sheet_sha256": "133ef35a9224ed5511f12fd4fb1ddf3a66ffd8752776896c7c5c70739a9b04bc",
+    "installed_validation_sha256": "9d95ca8b26a5b68194739b9ae9f1d5ae2614ffd3b8e8d593dbac7c8c71071f37",
+    "previews_sha256": {
+      "idle": "b73cce970a3726bc06ba2885146e7609f4213745eb96a41ebe205f5c7326fe15",
+      "waving": "58db9e90b500086fe7d75aa942e2d94552a923c3d3038e3d5e121ff9d10e8904",
+      "review": "f786acaf4c886286e6b503074c2def86eec8f3b299365f8269e1b57f5c2e689a",
+      "focus": "8cb14b7efd2ed818faf6b329fb627c1c6fa40da8fac3a84fc518ed6072271b77",
+      "waiting": "4cf6cf05de71aa417a942b64705a83ebabf10264471f6f78f994e1c645491dc1"
+    }
   },
   "validation": {
     "atlas": "1536x1872 WEBP RGBA",
@@ -29,5 +40,5 @@
     "errors": [],
     "warnings": []
   },
-  "qa_note": "Outline treatment only: exterior white/pink halo pixels recolored to warm cream #F2E6CB while preserving Teddy's identity, proportions, outfit, glasses, iPad mini, animation states, and calm vibe."
+  "qa_note": "Teddy now has calmer timing and softer little work moods while preserving his identity, proportions, outfit, glasses, iPad mini, warm cream outline, and standard 9-state Codex pet atlas."
 }
