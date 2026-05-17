@@ -44,6 +44,7 @@ then verify the installed spritesheet hash matches the package manifest.
 - `downloads/teddy-codex-buddy.zip`: the share-safe install package.
 - `assets/pet.json` and `assets/spritesheet.webp`: the two files Codex needs.
 - `assets/site/`: landing-page images and README visuals.
+- `social/`: ready-to-post Teddy images and GIFs for X, LinkedIn, and launch articles.
 - `assets/manifest.json` and `assets/installed-validation.json`: proof files for the curious.
 
 ## Codex Check

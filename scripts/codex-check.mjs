@@ -14,7 +14,15 @@ const requiredFiles = [
   "assets/spritesheet.webp",
   "assets/teddy-social-card.png",
   "assets/site/hero-teddy.webp",
-  "assets/site/motion-wardrobe.png"
+  "assets/site/motion-wardrobe.png",
+  "social/README.md",
+  "social/00-social-library-contact-sheet.png",
+  "social/01-x-article-hero-1600x900.png",
+  "social/02-x-square-post-1200x1200.png",
+  "social/03-x-portrait-post-1080x1350.png",
+  "social/04-x-thread-mood-board-1600x1200.png",
+  "social/05-x-gif-waving.gif",
+  "social/06-x-gif-reviewing.gif"
 ];
 
 const failures = [];
@@ -126,6 +134,24 @@ for (const ref of imageRefs) {
 if (imageRefs.length > 0) {
   pass(`${imageRefs.length} page image references checked`);
 }
+
+const socialChecks = [
+  ["social/01-x-article-hero-1600x900.png", 5 * 1024 * 1024],
+  ["social/02-x-square-post-1200x1200.png", 5 * 1024 * 1024],
+  ["social/03-x-portrait-post-1080x1350.png", 5 * 1024 * 1024],
+  ["social/04-x-thread-mood-board-1600x1200.png", 5 * 1024 * 1024],
+  ["social/05-x-gif-waving.gif", 15 * 1024 * 1024],
+  ["social/06-x-gif-reviewing.gif", 15 * 1024 * 1024]
+];
+
+for (const [file, maxBytes] of socialChecks) {
+  const size = readFileSync(projectPath(file)).byteLength;
+  if (size > maxBytes) {
+    fail(`Social image exceeds upload-safe size: ${file}`);
+  }
+}
+
+pass("social image library files are upload-size safe");
 
 if (failures.length > 0) {
   console.error("Teddy Codex check failed:");
