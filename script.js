@@ -1,8 +1,12 @@
 const installPrompt = `Please install Teddy, my tiny Codex buddy, from:
 https://danieloleary.github.io/teddy-v31/downloads/teddy-codex-buddy.zip
 
-Download and unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
-then verify the installed spritesheet hash matches the package manifest.`;
+Back up any existing ~/.codex/pets/teddy folder, download and unzip the ZIP,
+copy only pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
+then verify the installed spritesheet SHA-256 is:
+c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a
+
+If verification fails, restore the backup.`;
 
 const toast = document.querySelector("[data-toast]");
 const copyPanel = document.querySelector("[data-copy-panel]");

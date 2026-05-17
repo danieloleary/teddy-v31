@@ -766,6 +766,39 @@ p {
   font-weight: 700;
 }
 
+.verified-package {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  max-width: 560px;
+  margin-top: 24px;
+  padding: 14px 16px;
+  background: rgba(255, 250, 242, 0.1);
+  border: 1px solid rgba(255, 250, 242, 0.18);
+  border-radius: var(--radius);
+  color: rgba(255, 250, 242, 0.78);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.verified-package span {
+  color: #fffaf2;
+}
+
+.verified-package strong {
+  color: rgba(255, 250, 242, 0.82);
+}
+
+.verified-package a {
+  color: #f7cf8a;
+  text-decoration: none;
+}
+
+.verified-package a:hover {
+  text-decoration: underline;
+}
+
 .share-band {
   background:
     radial-gradient(circle at 86% 14%, rgba(127, 181, 214, 0.18), transparent 34%),

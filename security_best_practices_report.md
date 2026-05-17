@@ -36,7 +36,7 @@ The Teddy Codex Buddy public landing page is a static GitHub Pages site with no 
 - ZIP metadata scan: no absolute local home path or local username string remains inside `teddy/manifest.json` or `teddy/installed-validation.json`.
 - DOM sink scan: no common HTML-injection, code-execution, event-handler, cross-window, browser-storage, or dynamic-navigation sink pattern was found in app code.
 - Third-party surface: no external scripts, styles, iframes, fonts, or CDN assets.
-- Package integrity: ZIP test passed; current friend-ready ZIP is `downloads/teddy-codex-buddy.zip`, and package SHA-256 is `89b41988144d5a334dcce667556e8d8f16fd2932c42bfdd40d114eca7e063023`.
+- Package integrity: ZIP test passed; current friend-ready ZIP is `downloads/teddy-codex-buddy.zip`, and package SHA-256 is `0186465198683f4eea7e6011ee731a25b199276e8ff829ec2bf31fc93e89d32b`.
 
 ## Residual Risk
 

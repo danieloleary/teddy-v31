@@ -172,6 +172,12 @@
               Grab the tiny ZIP, then let Codex help tuck him into place. That is the
               whole store: one cute little pet, ready to come home.
             </p>
+            <div class="verified-package" aria-label="Verified package details">
+              <span>Verified package</span>
+              <strong>4.0.0 · validation clean · residue 0</strong>
+              <a href="assets/manifest.json">Manifest</a>
+              <a href="assets/installed-validation.json">Validation</a>
+            </div>
           </div>
           <div class="download-panel">
             <span class="file-icon" aria-hidden="true">
@@ -240,19 +246,19 @@
           <div class="around-links" aria-label="Teddy directory links">
             <a href="https://codex-pet.org/pets/teddy">
               <strong>Codex Pet Gallery</strong>
-              <span>Live now with preview, package, and animation states.</span>
+              <span>Live listing; V4 package refresh pending on their side.</span>
             </a>
             <a href="https://codex-pets.net/#/pets/teddy">
               <strong>Codex Pets</strong>
-              <span>Live listing for Teddy's shareable pet page.</span>
+              <span>Live listing; V4 package refresh pending on their side.</span>
             </a>
             <a href="https://github.com/legeling/awesome-codex-pet/pull/5">
               <strong>Awesome Codex Pet</strong>
-              <span>Pull request open for the curated community list.</span>
+              <span>Pull request open with Teddy's V4 assets.</span>
             </a>
             <a href="https://github.com/alvinunreal/openpets/issues/24">
               <strong>OpenPets</strong>
-              <span>Submission open for gallery review.</span>
+              <span>Submission open with a V4 refresh note.</span>
             </a>
             <a href="https://www.codex-pet.com/">
               <strong>codex-pet.com</strong>
@@ -346,8 +352,12 @@
               <pre><code>Please install Teddy, my tiny Codex buddy, from:
 https://danieloleary.github.io/teddy-v31/downloads/teddy-codex-buddy.zip
 
-Download and unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
-then verify the installed spritesheet hash matches the package manifest.</code></pre>
+Back up any existing ~/.codex/pets/teddy folder, download and unzip the ZIP,
+copy only pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
+then verify the installed spritesheet SHA-256 is:
+c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a
+
+If verification fails, restore the backup.</code></pre>
               <button class="button light" type="button" data-copy-install>
                 Copy install prompt
               </button>

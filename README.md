@@ -12,8 +12,15 @@ Meet Teddy, a tiny animated bear buddy for your Codex screen. Teddy is calm, dap
 - Dan on X: [@danieloleary](https://x.com/danieloleary)
 - Dan's GitHub: [github.com/danieloleary](https://github.com/danieloleary)
 - Built with Codex: [openai.com/codex](https://openai.com/codex/)
-- Package SHA-256: `89b41988144d5a334dcce667556e8d8f16fd2932c42bfdd40d114eca7e063023`
+- Package SHA-256: `0186465198683f4eea7e6011ee731a25b199276e8ff829ec2bf31fc93e89d32b`
 - Spritesheet SHA-256: `c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a`
+
+## Verified Package
+
+- Release: `4.0.0`
+- Last verified: `2026-05-17T18:21:28Z`
+- Package validation: `1536x1872 WEBP RGBA`, transparent residue `0`, errors `[]`, warnings `[]`
+- Proof: [manifest](assets/manifest.json), [validation](assets/installed-validation.json), [security review](security_best_practices_report.md)
 
 ## What's New
 
@@ -21,12 +28,12 @@ Teddy now has calmer timing and softer little work moods while keeping the same 
 
 ## Teddy Around The Web
 
-- Live on Codex Pet Gallery: [codex-pet.org/pets/teddy](https://codex-pet.org/pets/teddy)
-- Live on Codex Pets: [codex-pets.net/#/pets/teddy](https://codex-pets.net/#/pets/teddy)
+- Live on Codex Pet Gallery, V4 refresh pending: [codex-pet.org/pets/teddy](https://codex-pet.org/pets/teddy)
+- Live on Codex Pets, V4 refresh pending: [codex-pets.net/#/pets/teddy](https://codex-pets.net/#/pets/teddy)
 - Pending on codex-pet.com as `teddy`
-- Submitted to OpenPets: [alvinunreal/openpets#24](https://github.com/alvinunreal/openpets/issues/24)
+- Submitted to OpenPets with V4 refresh note: [alvinunreal/openpets#24](https://github.com/alvinunreal/openpets/issues/24)
 - Submitted to Pumpex Pets for approval
-- PR open for Awesome Codex Pet: [legeling/awesome-codex-pet#5](https://github.com/legeling/awesome-codex-pet/pull/5)
+- PR open for Awesome Codex Pet with V4 assets: [legeling/awesome-codex-pet#5](https://github.com/legeling/awesome-codex-pet/pull/5)
 
 ## Install Teddy
 
@@ -45,8 +52,12 @@ Paste this into Codex:
 Please install Teddy, my tiny Codex buddy, from:
 https://danieloleary.github.io/teddy-v31/downloads/teddy-codex-buddy.zip
 
-Download and unzip it, copy pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
-then verify the installed spritesheet hash matches the package manifest.
+Back up any existing ~/.codex/pets/teddy folder, download and unzip the ZIP,
+copy only pet.json and spritesheet.webp into ~/.codex/pets/teddy/,
+then verify the installed spritesheet SHA-256 is:
+c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a
+
+If verification fails, restore the backup.
 ```
 
 ## Teddy Moves
