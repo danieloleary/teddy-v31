@@ -32,7 +32,7 @@ Teddy now has calmer timing and softer little work moods while keeping the same 
 - Live on Codex Pets, V4 refresh pending: [codex-pets.net/#/pets/teddy](https://codex-pets.net/#/pets/teddy)
 - Live and V4 verified on OpenPets: [openpets.dev/pets/teddy-0bd28606](https://openpets.dev/pets/teddy-0bd28606)
 - Merged into Awesome Codex Pet: [legeling/awesome-codex-pet#5](https://github.com/legeling/awesome-codex-pet/pull/5)
-- Pending on codex-pet.com as `teddy`
+- Live on codex-pet.com, V4 refresh pending: [codex-pet.com/pets/teddy](https://www.codex-pet.com/pets/teddy)
 - Submitted to Pumpex Pets for approval
 
 ## Install Teddy
