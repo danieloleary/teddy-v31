@@ -33,7 +33,7 @@ button:disabled{opacity:.45;cursor:default}
 
 /* Interaction: distinct rest, hover, pressed, focus and disabled states. */
 a, button, summary, .options label {
-  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 a { text-underline-offset: 4px; text-decoration-thickness: 1px; }
 nav { gap: 8px; }
@@ -49,7 +49,7 @@ summary { border-radius: 8px; padding: 10px 8px; }
 button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible, .stage:focus-visible {
   outline: 3px solid #b15b31; outline-offset: 4px;
 }
-.button:active, button:not(.pet-touch):not(:disabled):active { transform: translateY(1px); box-shadow: none; }
+.button:active, button:not(.pet-touch):not(:disabled):active { box-shadow: none; }
 button:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
 .pet-tools { border-radius: 14px; padding: 3px; box-shadow: 0 3px 12px #27332e0c; }
 .pet-tools button { background: transparent; min-height: 40px; font-size: 12px; }
@@ -59,8 +59,8 @@ button:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
 @media (hover: hover) and (pointer: fine) {
   nav a:hover { background: #e8eddf; color: #283e2a; }
   a:not(.button):not(.brand):hover { color: #47672f; text-decoration: underline; }
-  .primary:hover { background: #2e4531; color: white; transform: translateY(-2px); box-shadow: 0 5px 0 #243728, 0 8px 16px #27332e12; }
-  .secondary:hover { background: #edf1e5; border-color: #7e9670; color: #283e2a; transform: translateY(-2px); box-shadow: 0 4px 0 #d2dac6; }
+  .primary:hover { background: #2e4531; color: white; box-shadow: 0 3px 0 #283b2a; }
+  .secondary:hover { background: #edf1e5; border-color: #7e9670; color: #283e2a; box-shadow: 0 2px 0 #dddccd; }
   button:not(.pet-touch):not(:disabled):hover { background: #e9efdf; border-color: #8c9f7c; color: #253b28; box-shadow: 0 2px 6px #27332e0c; }
   button[aria-pressed="true"]:not(:disabled):hover { background: #2e4531; border-color: #2e4531; color: white; }
   summary:hover, .options label:hover { background: #ecefdf; }
@@ -90,4 +90,20 @@ button:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
   html { scroll-behavior: auto; }
   a, button, summary, .options label { transition: none; }
   .button:hover, .button:active, button:not(.pet-touch):active { transform: none; }
+}
+
+/* Stable hover targets: color changes never move or resize a control. */
+.author { margin-top: 22px; }
+.author .byline { margin-bottom: 4px; }
+.social-links { display: flex; flex-wrap: wrap; gap: 4px; }
+.social-links a { display: inline-flex; align-items: center; gap: 5px; padding: 8px 10px; min-height: 40px; border-radius: 8px; font-size: 12px; color: var(--green); text-decoration: underline; text-underline-offset: 4px; }
+.social-links a:first-child { margin-left: -10px; }
+.footer-author p { font-size: 13px; color: var(--ink); }
+.footer-author .social-links { margin-top: 4px; }
+@media (hover: hover) and (pointer: fine) {
+  .social-links a:hover { background: #e8eddf; color: #283e2a; }
+}
+@media (max-width: 720px) {
+  .author .social-links { justify-content: center; }
+  .footer-author { order: 3; width: 100%; }
 }
