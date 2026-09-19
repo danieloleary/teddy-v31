@@ -1,7 +1,13 @@
 # Teddy, an animated bear for Codex
 
-Round glasses. Navy cardigan. A tiny tablet he takes very seriously.
-Teddy is a free animated pet that keeps you company while you build.
+Teddy is my chief of staff. He joins calls and has presented at conferences
+with me. This is his little desktop counterpart: a free animated bear for Codex.
+
+If you already know Teddy, you’ll recognize the glasses, navy cardigan, and
+very serious little tablet. The pet keeps you company while you build; it
+doesn’t include Teddy’s chief-of-staff tools or meeting capabilities.
+
+Dan O’Leary
 
 [Meet Teddy and try the animations](https://danieloleary.github.io/teddy-v31/)
 · [Download Teddy 5.0](downloads/teddy-5.0.0.zip)
