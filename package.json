@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "codex:check": "node scripts/codex-check.mjs"
+    "codex:check": "node scripts/codex-check.mjs",
+    "codex:check:v5": "node scripts/check-v5.mjs",
+    "test:animation": "node --test scripts/tests/animation.test.mjs"
   }
 }

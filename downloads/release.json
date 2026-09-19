@@ -1,0 +1,17 @@
+{
+  "version": "5.0.0",
+  "spriteVersionNumber": 2,
+  "archive": "teddy-5.0.0.zip",
+  "bytes": 2304162,
+  "sha256": "b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e73",
+  "files": {
+    "teddy/pet.json": {
+      "sha256": "b07eee8879a0b5019c33ee1e150f1f9dbb989ba32335b4f3234a81bddb076271",
+      "bytes": 259
+    },
+    "teddy/spritesheet.webp": {
+      "sha256": "204197ee622933d46df0aaf175b2378776dc24842ae4d0172feb3bef3422f973",
+      "bytes": 2303030
+    }
+  }
+}
