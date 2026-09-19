@@ -48,10 +48,14 @@ V5 archive SHA-256:
 V5 atlas SHA-256:
 `204197ee622933d46df0aaf175b2378776dc24842ae4d0172feb3bef3422f973`
 
+The stable [main download](downloads/teddy-codex-buddy.zip) now serves 5.0.
+
+Package SHA-256: `b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e73`
+
 ## Classic Teddy
 
 The [classic page](index-v4.html), V4 assets, and
-[original download](downloads/teddy-codex-buddy.zip) remain available.
+[original download](downloads/teddy-4.0.0.zip) remain available.
 Third-party directories may still show earlier versions.
 
 - V4 Package SHA-256: `0186465198683f4eea7e6011ee731a25b199276e8ff829ec2bf31fc93e89d32b`

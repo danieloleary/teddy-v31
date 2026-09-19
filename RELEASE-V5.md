@@ -77,7 +77,7 @@ it caches the art. Native refresh behavior has not been witnessed.
 ## Previous version
 
 [Classic Teddy](index-v4.html), its assets, and the
-[V4 download](downloads/teddy-codex-buddy.zip) remain available.
+[V4 download](downloads/teddy-4.0.0.zip) remain available.
 To restore the previous landing page locally, copy `index-v4.html` over
 `index.html`. Publishing that rollback is a separate action.
 
