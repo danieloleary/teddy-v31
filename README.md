@@ -13,8 +13,11 @@ Teddy is a free animated pet that keeps you company while you build.
 - Softer anime eyes, gentle blinks, and a relaxed resting smile.
 - Nine moods, including a wave, a small hop, tablet tapping, and a glasses adjustment.
 - Sixteen looks with head turns in every direction.
-- A website preview with mood buttons, pointer attention, keyboard controls,
-  touch controls, pause, and reduced-motion support.
+- A floating site pet: tap to wave, drag to move, pause, or hide him.
+- An interactive preview with nine moods, pointer attention, keyboard and touch
+  controls, and reduced-motion support.
+- A silent [20-second animation demo](v5/assets/teddy-demo.mp4) with captions,
+  a transcript, and a download.
 
 The download contains only the pet artwork and its metadata. It needs no extra
 account, subscription, model, or server. Codex must support custom pet format 2.

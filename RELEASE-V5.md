@@ -22,7 +22,8 @@ Hidden-tab handling used a simulated visibility transition.
 **Native playback in Codex remains unverified.** Actual Safari and Chromium
 comparison and native work-state transitions are still open. Website tests do
 not establish native behavior. Third-party directory listings may show an older
-version. No launch film is included.
+version. The site includes a silent 20-second demonstration rendered from the
+shipped atlas, with captions and a transcript. It is not native Codex footage.
 
 ## Download
 
@@ -79,3 +80,13 @@ it caches the art. Native refresh behavior has not been witnessed.
 [V4 download](downloads/teddy-codex-buddy.zip) remain available.
 To restore the previous landing page locally, copy `index-v4.html` over
 `index.html`. Publishing that rollback is a separate action.
+
+## Website pet and demo
+
+The floating site pet responds to pointer movement and waves when tapped. Drag
+him to move, use arrow keys while focused, or choose Pause and Hide. Reduced
+motion starts him still. Playing the demo pauses both live animations.
+
+The demo uses the unchanged V5 atlas and contains no audio. It is H.264 at
+1280×720, 20 seconds long, and 731,669 bytes. It loads when you choose to play.
+The poster, captions, transcript, and download remain available as alternatives.

@@ -1,4 +1,5 @@
 import {CELL,STATES,frameAt,lookAt,lookCell} from './animation.mjs';
+import {mountCompanion} from './companion.mjs';
 
 const canvas=document.querySelector('#pet');
 const ctx=canvas.getContext('2d');
@@ -63,7 +64,7 @@ document.addEventListener('visibilitychange',sync);
 reduced.addEventListener('change',e=>{paused=e.matches;gaze=null;if(paused)elapsed=0;sync();});
 atlas.addEventListener('load',()=>{
  if(atlas.naturalWidth!==1536||atlas.naturalHeight!==2288){fail();return;}
- ready=true;canvas.hidden=false;document.querySelector('#fallback').hidden=true;sync();
+ mountCompanion(atlas);ready=true;canvas.hidden=false;document.querySelector('#fallback').hidden=true;sync();
 });
 function fail(){ready=false;canvas.hidden=true;document.querySelector('#fallback').hidden=false;status.textContent='The animated preview could not load. Teddy’s still portrait is shown.';sync();}
 atlas.addEventListener('error',fail);
@@ -75,3 +76,7 @@ copy.addEventListener('click',async()=>{
  try{await navigator.clipboard.writeText(value);document.querySelector('#copy-status').textContent='Copied. Paste it into Codex after downloading Teddy.';}
  catch{document.querySelector('#copy-status').textContent='Select and copy the instructions below.';document.querySelector('#install-prompt').focus();}
 });
+
+const video=document.querySelector('#demo-video');
+video.addEventListener('play',()=>{paused=true;sync();});
+video.addEventListener('error',()=>{document.querySelector('#video-error').hidden=false;},true);
