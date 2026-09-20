@@ -14,4 +14,4 @@ it is not native Codex footage. No music or recorded speech is included.
 
 Rebuild on this Mac with `python3 scripts/render-social-video.py` from the
 repository root. Requires Pillow, FFmpeg, and the macOS Georgia/Arial fonts.
-The source demo and pet package are unchanged. Upload/posting is still pending.
+The source demo and pet package are unchanged. Social posts remain unpublished.

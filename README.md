@@ -1,7 +1,7 @@
 # Teddy 5.0 for Codex
 
-Teddy is my chief of staff. He joins calls and has presented at conferences
-with me. This free animated bear is his desktop counterpart.
+I’m Dan O’Leary. Teddy is my chief of staff. He joins calls and has presented at conferences
+with me. I made this free animated version of him for Codex.
 
 [Try Teddy](https://danieloleary.github.io/teddy-v31/) ·
 [Download 5.0](downloads/teddy-5.0.0.zip) ·
@@ -9,10 +9,10 @@ with me. This free animated bear is his desktop counterpart.
 
 ![Teddy with his tablet](v5/assets/portrait.webp)
 
-Anime eyes, nine moods, sixteen looks. Try the floating pet on the site, or
+Anime eyes, nine moods, sixteen directions to look. Try the floating pet on the site, or
 watch the captioned [20-second demo](v5/assets/teddy-demo.mp4).
 
-The download is artwork and metadata. Chief-of-staff tools and meeting features
+The download contains Teddy’s artwork and pet settings. Chief-of-staff tools and meeting features
 aren’t included. No extra account, subscription, or model is needed.
 Requires Codex custom pet format 2.
 

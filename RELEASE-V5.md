@@ -1,6 +1,6 @@
 # Teddy 5.0
 
-September 19, 2026. Anime eyes, nine moods, sixteen looks.
+September 19, 2026. Anime eyes, nine moods, sixteen directions to look.
 
 Package, recovery, artwork, and WebKit preview checks passed. **Native Codex
 playback remains unverified.** Browser tests don’t establish native behavior.
