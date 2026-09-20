@@ -9,7 +9,8 @@ it is not native Codex footage. No music or recorded speech is included.
 - Captions: `teddy-5.0-dan-square.vtt`.
 - Description: Teddy, a golden bear with round glasses and a navy cardigan,
   waves, taps his tablet, adjusts his glasses, hops, and turns his head.
-- Draft post copy and release gates: `../../MONDAY-RELEASE.md`.
+- Package details and recovery: [release notes](../../RELEASE-V5.md).
+- Social post copy is maintained separately as an unpublished draft.
 
 Rebuild on this Mac with `python3 scripts/render-social-video.py` from the
 repository root. Requires Pillow, FFmpeg, and the macOS Georgia/Arial fonts.
