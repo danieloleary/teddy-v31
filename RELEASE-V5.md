@@ -1,40 +1,16 @@
 # Teddy 5.0
 
-September 19, 2026. Anime-inspired artwork, nine moods, sixteen looks, and an
-interactive website preview. The bear, glasses, navy cardigan, and tablet stay.
+September 19, 2026. Anime eyes, nine moods, sixteen looks.
 
-## Verification status
-
-The artwork passed geometry and transparency validation, three independent
-blind-direction reviews, and final visual review. All reviewers agreed on the
-look directions. Minor scale variation at the look-loop boundary and the jump's
-extra headroom were reviewed and accepted.
-
-Two package builds produced identical bytes. Fresh installation, V4 upgrade,
-interrupted replacement, and restoration passed with the exact download.
-Ten package/recovery tests and three animation-mapping tests cover the tooling.
-
-The preview was tested in isolated WebKit: every animation frame, all sixteen
-pointer sectors, direction buttons, keyboard, touch emulation, pause, reduced
-motion, narrow layout, missing artwork, no JavaScript, and clipboard denial.
-Hidden-tab handling used a simulated visibility transition.
-
-**Native playback in Codex remains unverified.** Actual Safari and Chromium
-comparison and native work-state transitions are still open. Website tests do
-not establish native behavior. Third-party directory listings may show an older
-version. The site includes a silent 20-second demonstration rendered from the
-shipped atlas, with captions and a transcript. It is not native Codex footage.
+Package, recovery, artwork, and WebKit preview checks passed. **Native Codex
+playback remains unverified.** Browser tests don’t establish native behavior.
+Some directories still serve older versions.
 
 ## Download
 
-[Download Teddy 5.0](downloads/teddy-5.0.0.zip), 2,304,162 bytes.
-The ZIP contains only:
-
-- `teddy/pet.json`
-- `teddy/spritesheet.webp`
-
-The atlas is a 1536×2288 WebP with `spriteVersionNumber: 2`.
-No executable, model, account, or service ships inside the download.
+[Download 5.0](downloads/teddy-5.0.0.zip), 2,304,162 bytes. Contains only
+`teddy/pet.json` and `teddy/spritesheet.webp`: format 2, 1536×2288 WebP.
+No executable, model, account, or service is included.
 
 Archive SHA-256:
 `b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e73`
@@ -42,51 +18,42 @@ Archive SHA-256:
 Atlas SHA-256:
 `204197ee622933d46df0aaf175b2378776dc24842ae4d0172feb3bef3422f973`
 
-[release.json](downloads/release.json) records the archive and individual file
-hashes. The ZIP hash is external to avoid a self-referential manifest.
+Individual file hashes: [release.json](downloads/release.json).
 
 ## Install and recover
 
-The site’s **Copy install message** button provides instructions for Codex,
-including the expected ZIP hash and backup handling.
+Use **Copy install message** on the [site](https://danieloleary.github.io/teddy-v31/#home).
+It includes verification and backup instructions.
 
-For a command-line installation from this repository, use Python 3 with Pillow
-installed. The existing pets directory must be a real directory, not a symlink.
+For command-line installation, use Python 3 with Pillow from this repository.
+The existing pets directory must not be a symlink.
 
 ```sh
 python3 scripts/release.py install downloads/teddy-5.0.0.zip b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e73 "$HOME/.codex/pets/teddy"
 ```
 
-The helper checks the hash, archive paths, metadata, and image geometry before
-replacement. It stages and verifies both files together, preserves unrelated
-regular files, and saves an existing Teddy under
-`pets/.teddy-recovery/teddy.pre-v5`. It refuses to overwrite an existing backup.
-The nested location prevents the backup from appearing as another pet.
+The helper validates and stages both files, preserves unrelated regular files,
+and backs up Teddy at `pets/.teddy-recovery/teddy.pre-v5`. It never overwrites
+that backup. Handled failures restore the original directory.
 
-A handled failure restores the original directory. After a machine or process
-interruption, restore the saved pair with:
+After an interrupted installation, restore the backup:
 
 ```sh
 python3 scripts/release.py restore "$HOME/.codex/pets/teddy"
 ```
 
-Restoration retains the V5 candidate under
-`pets/.teddy-recovery/teddy.v5-restored-away`. Reselect Teddy or reload Codex if
-it caches the art. Native refresh behavior has not been witnessed.
+The displaced V5 copy stays at `pets/.teddy-recovery/teddy.v5-restored-away`.
+Reselect Teddy or reload Codex if artwork is cached. Native refresh is unverified.
 
-## Previous version
+[Classic site](index-v4.html) and [V4 download](downloads/teddy-4.0.0.zip) remain
+available. For a local site rollback, copy `index-v4.html` to `index.html`.
+Publishing that rollback is separate.
 
-[Classic Teddy](index-v4.html), its assets, and the
-[V4 download](downloads/teddy-4.0.0.zip) remain available.
-To restore the previous landing page locally, copy `index-v4.html` over
-`index.html`. Publishing that rollback is a separate action.
+## Website demo
 
-## Website pet and demo
+Tap Teddy to wave; drag or use arrow keys to move him. Pause and Hide are
+available. Reduced motion starts him still. Playing the video pauses the pets.
 
-The floating site pet responds to pointer movement and waves when tapped. Drag
-him to move, use arrow keys while focused, or choose Pause and Hide. Reduced
-motion starts him still. Playing the demo pauses both live animations.
-
-The demo uses the unchanged V5 atlas and contains no audio. It is H.264 at
-1280×720, 20 seconds long, and 731,669 bytes. It loads when you choose to play.
-The poster, captions, transcript, and download remain available as alternatives.
+The silent, captioned demo uses V5 artwork, not native Codex footage. It loads
+on play: H.264, 1280×720, 20 seconds, 731,669 bytes. A poster, transcript, and
+video download are available on the site.

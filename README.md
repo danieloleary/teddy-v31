@@ -1,80 +1,50 @@
-# Teddy, an animated bear for Codex
+# Teddy 5.0 for Codex
 
 Teddy is my chief of staff. He joins calls and has presented at conferences
-with me. This is his little desktop counterpart: a free animated bear for Codex.
+with me. This free animated bear is his desktop counterpart.
 
-If you already know Teddy, you’ll recognize the glasses, navy cardigan, and
-very serious little tablet. The pet keeps you company while you build; it
-doesn’t include Teddy’s chief-of-staff tools or meeting capabilities.
-
-Made by Dan O’Leary.
-
-Follow my work on [X](https://x.com/danieloleary), connect on
-[LinkedIn](https://www.linkedin.com/in/danieloleary), or explore what I build on
-[GitHub](https://github.com/danieloleary).
-
-[Meet Teddy and try the animations](https://danieloleary.github.io/teddy-v31/)
-· [Download Teddy 5.0](downloads/teddy-5.0.0.zip)
+[Try Teddy](https://danieloleary.github.io/teddy-v31/) ·
+[Download 5.0](downloads/teddy-5.0.0.zip) ·
+[Stable download](downloads/teddy-codex-buddy.zip)
 
 ![Teddy with his tablet](v5/assets/portrait.webp)
 
-## What’s in 5.0
+Anime eyes, nine moods, sixteen looks. Try the floating pet on the site, or
+watch the captioned [20-second demo](v5/assets/teddy-demo.mp4).
 
-- Softer anime eyes, gentle blinks, and a relaxed resting smile.
-- Nine moods, including a wave, a small hop, tablet tapping, and a glasses adjustment.
-- Sixteen looks with head turns in every direction.
-- A floating site pet: tap to wave, drag to move, pause, or hide him.
-- An interactive preview with nine moods, pointer attention, keyboard and touch
-  controls, and reduced-motion support.
-- A silent [20-second animation demo](v5/assets/teddy-demo.mp4) with captions,
-  a transcript, and a download.
+The download is artwork and metadata. Chief-of-staff tools and meeting features
+aren’t included. No extra account, subscription, or model is needed.
+Requires Codex custom pet format 2.
 
-The download contains only the pet artwork and its metadata. It needs no extra
-account, subscription, model, or server. Codex must support custom pet format 2.
+## Install
 
-## Add Teddy to Codex
-
-1. Download [Teddy 5.0](downloads/teddy-5.0.0.zip).
-2. On the [site](https://danieloleary.github.io/teddy-v31/), open **How to add Teddy
-   to Codex** and copy the install message.
-3. Paste the message into Codex with the ZIP attached. It asks Codex to verify
-   the download and preserve your existing Teddy before installing.
+1. Download the ZIP.
+2. On the [site](https://danieloleary.github.io/teddy-v31/#home), select
+   **How to add Teddy to Codex**, then **Copy install message**.
+3. Paste into Codex with the ZIP attached. The instructions verify the package
+   and back up your existing Teddy.
 4. Choose **Teddy 5.0** in the pet selector.
 
-## Checks and recovery
+Package, recovery, and browser checks passed. **Native Codex playback remains
+unverified.** Some directories still serve older versions.
 
-Artwork passed atlas validation, three independent blind-direction reviews,
-and final visual review. The package reproduced byte-for-byte and passed
-installation and recovery tests. The interactive preview was tested in isolated
-WebKit. Native playback in Codex remains unverified; browser checks do not prove
-native behavior.
-
-See [release notes and rollback steps](RELEASE-V5.md) and the
-[download manifest](downloads/release.json).
-
-V5 archive SHA-256:
-`b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e73`
-
-V5 atlas SHA-256:
-`204197ee622933d46df0aaf175b2378776dc24842ae4d0172feb3bef3422f973`
-
-The stable [main download](downloads/teddy-codex-buddy.zip) now serves 5.0.
+[Release notes and recovery](RELEASE-V5.md) · [File hashes](downloads/release.json)
 
 Package SHA-256: `b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e73`
 
+V5 atlas SHA-256: `204197ee622933d46df0aaf175b2378776dc24842ae4d0172feb3bef3422f973`
+
 ## Classic Teddy
 
-The [classic page](index-v4.html), V4 assets, and
-[original download](downloads/teddy-4.0.0.zip) remain available.
-Third-party directories may still show earlier versions.
+[Classic site](index-v4.html) · [V4 download](downloads/teddy-4.0.0.zip)
 
-- V4 Package SHA-256: `0186465198683f4eea7e6011ee731a25b199276e8ff829ec2bf31fc93e89d32b`
-- V4 Spritesheet SHA-256: `c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a`
+V4 Package SHA-256: `0186465198683f4eea7e6011ee731a25b199276e8ff829ec2bf31fc93e89d32b`
 
-## Project checks
+V4 Spritesheet SHA-256: `c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b62806642304a`
 
-Use Node.js for site and animation checks. Package tests also need Python 3
-with Pillow installed.
+## Development
+
+Requires Node.js and Python 3 with Pillow.
 
 ```sh
 npm run codex:check
@@ -83,4 +53,5 @@ npm run test:animation
 python3 -m unittest discover -s scripts/tests -p 'test_*.py'
 ```
 
-Made by [Dan O’Leary](https://github.com/danieloleary).
+Made by Dan O’Leary. [GitHub](https://github.com/danieloleary) ·
+[X](https://x.com/danieloleary) · [LinkedIn](https://www.linkedin.com/in/danieloleary)
