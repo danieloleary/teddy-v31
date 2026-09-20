@@ -7,7 +7,11 @@ If you already know Teddy, you’ll recognize the glasses, navy cardigan, and
 very serious little tablet. The pet keeps you company while you build; it
 doesn’t include Teddy’s chief-of-staff tools or meeting capabilities.
 
-Dan O’Leary
+Made by Dan O’Leary.
+
+Follow my work on [X](https://x.com/danieloleary), connect on
+[LinkedIn](https://www.linkedin.com/in/danieloleary), or explore what I build on
+[GitHub](https://github.com/danieloleary).
 
 [Meet Teddy and try the animations](https://danieloleary.github.io/teddy-v31/)
 · [Download Teddy 5.0](downloads/teddy-5.0.0.zip)
