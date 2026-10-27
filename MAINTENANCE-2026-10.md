@@ -57,3 +57,30 @@ The older `.com` reconciliation request remains open with no comments as of
 October 26: [existing issue](https://github.com/BeiXiao/awesome-codex-pets/issues/1).
 The `.org` ownership request remains unresolved. No duplicate submissions or
 follow-up messages were sent.
+
+## Video and Lovable maintenance
+
+The GitHub demo now offers both MP4 and a real WebM fallback. Local Chromium
+played the MP4 beyond 15 seconds with seven caption cues. With MP4 requests
+intentionally failed, the actual WebM advanced, loaded all seven cues, paused
+both pets, and did not show a false playback error. No replacement video was
+injected. The served WebM matched the repository bytes.
+
+Lovable revision `ceb1a5bc9c25bcb9d50b270b2be6080246120777` restores the compact
+demo, corrects the installation instructions, and updates dependencies. Its
+saved `bun audit` result reports zero known findings across 443 packages,
+after 23 findings before the fixes. Build and typecheck passed; the saved
+browser receipt has 39 passing checks. These are Lovable sandbox results.
+Lovable revision `37976171826aaead9465713c363b450677b7690d` adds the real
+WebM source. Its saved regression test has 16 passing assertions across
+Chromium and Firefox: actual served video advances, captions load, and both
+pets pause, without substituting media bytes. Build/typecheck and the 39
+existing QA assertions passed after this change.
+
+No Lovable publication was performed. Independent preview readback remains
+unverified: the isolated browser requires sign-in, and the in-app browser
+connection fails because its service module is missing. Native Codex playback
+remains a separate unverified gate.
+
+The exact release ZIP also passed a disposable V4 upgrade and rollback rehearsal,
+restoring both original files byte-for-byte. User installation was not changed.
