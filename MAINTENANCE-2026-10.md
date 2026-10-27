@@ -23,7 +23,7 @@ The package, atlas, recovery copies, and creator credit are unchanged.
 | --- | --- | --- | --- |
 | Verify native Codex playback | Permitted native observation | Select installed Teddy; observe nine moods and gaze, reload and confirm selection. File inspection cannot pass this gate. | Use the restore command in the release notes. |
 | Verify remaining directories | OpenPets and codex-pets.net downloads now match; Awesome Codex Pet source matches | Check remaining older listings without duplicate submissions. Awesome npm installation is untested. | Keep the official download. |
-| Finish Lovable maintenance | Preview update is saved and tested; publication approval is pending | Demo and install copy restored; dependency audit, build/typecheck, 39 UI checks and 16 video assertions pass. Independent hosted readback remains unverified. | Restore revision `8428987901cb9410b152a922f4191b372bca524e`. |
+| Finish Lovable maintenance | Published October 27 with Dan’s approval | Demo and install copy restored; dependency audit, build/typecheck, 39 UI checks and 16 video assertions pass. Live-site readback passed on October 27. | Restore revision `8428987901cb9410b152a922f4191b372bca524e`. |
 
 ## Validation and recovery
 
@@ -77,10 +77,13 @@ Chromium and Firefox: actual served video advances, captions load, and both
 pets pause, without substituting media bytes. Build/typecheck and the 39
 existing QA assertions passed after this change.
 
-No Lovable publication was performed. Independent preview readback remains
-unverified: the isolated browser requires sign-in, and the in-app browser
-connection fails because its service module is missing. Native Codex playback
-remains a separate unverified gate.
+Dan approved publication on October 27. Revision
+`37976171826aaead9465713c363b450677b7690d` was deployed to
+[the live Lovable site](https://teddypet.lovable.app/), deployment
+`6012b1c7-f76c-461d-b865-bb0f12551409`. Independent live-browser checks passed:
+mood selection, paused gaze, real video playback with seven caption cues,
+pause-on-video for both pets, 390px mobile layout, and reduced motion.
+Native Codex playback remains a separate unverified gate.
 
 The exact release ZIP also passed a disposable V4 upgrade and rollback rehearsal,
 restoring both original files byte-for-byte. User installation was not changed.
