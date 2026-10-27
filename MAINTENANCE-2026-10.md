@@ -23,7 +23,7 @@ The package, atlas, recovery copies, and creator credit are unchanged.
 | --- | --- | --- | --- |
 | Verify native Codex playback | Permitted native observation | Select installed Teddy; observe nine moods and gaze, reload and confirm selection. File inspection cannot pass this gate. | Use the restore command in the release notes. |
 | Verify remaining directories | OpenPets and codex-pets.net downloads now match; Awesome Codex Pet source matches | Check remaining older listings without duplicate submissions. Awesome npm installation is untested. | Keep the official download. |
-| Finish Lovable maintenance | Existing site is already public; preview changes are in progress | Restore the demo and accurate install copy; verify dependencies, mobile, reduced motion, and creator links. Updated publication needs authorization. | Restore revision `8428987901cb9410b152a922f4191b372bca524e`. |
+| Finish Lovable maintenance | Preview update is saved and tested; publication approval is pending | Demo and install copy restored; dependency audit, build/typecheck, 39 UI checks and 16 video assertions pass. Independent hosted readback remains unverified. | Restore revision `8428987901cb9410b152a922f4191b372bca524e`. |
 
 ## Validation and recovery
 
