@@ -34,6 +34,9 @@ Package SHA-256: `b1fdcb32cbc57cf19df2e6a895878537179a1ff440f357c5234a1ffe52af8e
 
 V5 atlas SHA-256: `204197ee622933d46df0aaf175b2378776dc24842ae4d0172feb3bef3422f973`
 
+Format checked against Codex 26.1021.31345 on October 26, 2026.
+See the [maintenance receipt](MAINTENANCE-2026-10.md) for scope and remaining checks.
+
 ## Classic Teddy
 
 [Classic site](index-v4.html) · [V4 download](downloads/teddy-4.0.0.zip)
@@ -44,13 +47,11 @@ V4 Spritesheet SHA-256: `c9e0da13b6bdeed6ffefecebf0633621c90aa042ca02b3b7224b628
 
 ## Development
 
-Requires Node.js and Python 3 with Pillow.
+Requires Node.js and Python 3 with Pillow. CI runs the package, animation, and
+recovery checks on each push and pull request.
 
 ```sh
-npm run codex:check
-npm run codex:check:v5
-npm run test:animation
-python3 -m unittest discover -s scripts/tests -p 'test_*.py'
+npm test
 ```
 
 Made by Dan O’Leary. [GitHub](https://github.com/danieloleary) ·

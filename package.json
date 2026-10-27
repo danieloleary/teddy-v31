@@ -5,6 +5,7 @@
   "scripts": {
     "codex:check": "node scripts/codex-check.mjs",
     "codex:check:v5": "node scripts/check-v5.mjs",
-    "test:animation": "node --test scripts/tests/animation.test.mjs"
+    "test:animation": "node --test scripts/tests/animation.test.mjs",
+    "test": "npm run codex:check && npm run codex:check:v5 && npm run test:animation && python3 -m unittest discover -s scripts/tests -p 'test_*.py'"
   }
 }

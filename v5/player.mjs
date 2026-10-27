@@ -28,7 +28,7 @@ function sync(){
  pause.textContent=paused?'Play animation':'Pause animation';
  pause.setAttribute('aria-pressed',String(paused));
  pause.disabled=!ready;
- document.querySelectorAll('#directions button').forEach(b=>b.disabled=paused||!ready);
+ document.querySelectorAll('#directions button').forEach(b=>b.disabled=!ready);
  document.querySelectorAll('[data-state]').forEach(b=>b.disabled=!ready);
  draw();if(!paused&&!document.hidden&&ready)request=requestAnimationFrame(tick);
 }
@@ -53,12 +53,12 @@ stage.addEventListener('pointerleave',()=>{if(paused)return;gaze=null;draw();});
 const directions=[['↖',14,'Up left'],['↑',0,'Up'],['↗',2,'Up right'],['←',12,'Left'],['·',null,'Neutral'],['→',4,'Right'],['↙',10,'Down left'],['↓',8,'Down'],['↘',6,'Down right']];
 for(const [label,index,name] of directions){
  const b=document.createElement('button');b.type='button';b.textContent=label;b.setAttribute('aria-label',`Look ${name.toLowerCase()}`);
- b.addEventListener('click',()=>{if(paused)return;gaze=index;status.textContent=`Looking ${name.toLowerCase()}`;draw();});
+ b.addEventListener('click',()=>{if(!ready)return;gaze=index;status.textContent=`Looking ${name.toLowerCase()}`;draw();});
  document.querySelector('#directions').append(b);
 }
 stage.addEventListener('keydown',e=>{
  const keys={ArrowUp:0,ArrowRight:4,ArrowDown:8,ArrowLeft:12,Escape:null};
- if(!(e.key in keys)||paused)return;e.preventDefault();gaze=keys[e.key];draw();
+ if(!(e.key in keys)||!ready)return;e.preventDefault();gaze=keys[e.key];draw();
 });
 document.addEventListener('visibilitychange',sync);
 reduced.addEventListener('change',e=>{paused=e.matches;gaze=null;if(paused)elapsed=0;sync();});
