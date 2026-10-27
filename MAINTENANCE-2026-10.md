@@ -50,5 +50,10 @@ Run the read-only network check separately from offline CI:
 python3 scripts/check-catalogs.py
 ```
 
-The check prints dated JSON, checks format 2 and exact artwork hashes, and
+The check prints dated JSON, checks stable IDs, format 2, and exact artwork hashes, and
 returns a nonzero exit code for an unavailable or mismatched package.
+
+The older `.com` reconciliation request remains open with no comments as of
+October 26: [existing issue](https://github.com/BeiXiao/awesome-codex-pets/issues/1).
+The `.org` ownership request remains unresolved. No duplicate submissions or
+follow-up messages were sent.

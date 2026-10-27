@@ -25,8 +25,10 @@ def fetch(url):
         raise ValueError('Response exceeds size limit')
     return data
 
-def check_files(manifest, atlas):
+def check_files(manifest, atlas, expected_id="teddy"):
     digest = hashlib.sha256(atlas).hexdigest()
+    if manifest.get('id') != expected_id:
+        raise ValueError('Catalog ID changed')
     if manifest.get('spriteVersionNumber') != 2 or digest != EXPECTED:
         raise ValueError('Catalog does not match Teddy format 2 and release atlas')
     return {'id': manifest['id'], 'display_name': manifest['displayName'],
@@ -57,7 +59,7 @@ def pet_share():
 def awesome():
     # Source package only: the site's npm installer is deliberately not executed.
     base = 'https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/pets/teddy--danieloleary/'
-    return check_files(json.loads(fetch(base + 'pet.json')), fetch(base + 'spritesheet.webp'))
+    return check_files(json.loads(fetch(base + 'pet.json')), fetch(base + 'spritesheet.webp'), 'teddy--danieloleary')
 
 if __name__ == '__main__':
     results = []
