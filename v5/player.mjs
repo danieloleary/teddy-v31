@@ -79,4 +79,7 @@ copy.addEventListener('click',async()=>{
 
 const video=document.querySelector('#demo-video');
 video.addEventListener('play',()=>{paused=true;sync();});
-video.addEventListener('error',()=>{document.querySelector('#video-error').hidden=false;},true);
+video.addEventListener('error',()=>{
+ if(video.error||video.networkState===HTMLMediaElement.NETWORK_NO_SOURCE)document.querySelector('#video-error').hidden=false;
+},true);
+video.addEventListener('loadeddata',()=>{document.querySelector('#video-error').hidden=true;});
